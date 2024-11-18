@@ -125,8 +125,7 @@ class Game:
                 self.ui.draw_text(f"Points: {self.ui.points}", self.pointfont, (0,0,0), 20, self.screen_height//2-400)
             for pipe in self.toppipes + self.bottompipes:
                     self.screen.blit(pipe.image, pipe.rect)
-                    pygame.draw.rect(self.screen, (255,0,0), pipe.rect, 2)
-                    pygame.draw.rect(self.screen, (0,255,0), pipe.point_rect, 2 )
+
             self.player.update()
 
             
